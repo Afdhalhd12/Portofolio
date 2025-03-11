@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portofolio</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
         <div class="portofolio" id="Portofolio">
             <h1 class="port"><span>Porto</span>folio</h1>
 
-            <div class="flex">
+            <div class="flex" data-aos="fade-up">
                 <div class="project">
                     <img src="Nasi.png" alt="nasi goreng" class="img-1">
                     <h2>Project Dico<span class="bawah">ding</span></h3>
@@ -77,7 +77,7 @@
             <!-- SKills -->
 
             <h1 class="skil" id="skills"><span>Ski</span>lls</h1>
-            <div class="skills">
+            <div class="skills" data-aos="fade-down">
                 <div class="skill">
                     <div class="skill-name">HTML</div>
                     <div class="skill-bar">
@@ -95,13 +95,13 @@
                 <div class="skill">
                     <div class="skill-name">JavaScript</div>
                     <div class="skill-bar">
-                        <div class="skill-per" per="10%" style="max-width: 10%;"></div>
+                        <div class="skill-per" per="25%" style="max-width: 25%;"></div>
                     </div>
                 </div>
             </div>
 
             <!-- contact -->
-            <div class="kontak" id="kontak">
+            <div class="kontak" id="kontak" data-aos="fade-up">
                 <div class="me">
                     <img src="sapiens.png" alt="orang" class="gambar">
                     <h1>Hubungi <span class="bawah">saya</span></h1>
@@ -122,6 +122,10 @@
                 window.location.href = page;
             }
         }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
